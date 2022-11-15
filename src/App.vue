@@ -32,6 +32,9 @@ export default {
     Projects,
     Contact,
     bottom,
+  },
+  created(){
+    document.title = "威延－個人履歷網站";
   }
 }
 </script>
