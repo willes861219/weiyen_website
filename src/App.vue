@@ -101,10 +101,6 @@ section {
         width: 50%;
         float: left;
         padding: 0;
-
-        ul {
-          margin-left: 0;
-        }
       }
     }
     .clear {
@@ -255,6 +251,7 @@ section {
               height: auto;
               min-height: 100%;
               min-width: 100%;
+              border-radius: 1em;
             }
           }
           .project-title,
@@ -287,7 +284,7 @@ section {
             width: 100%;
             top: 50%;
             left: 0;
-            padding: 25px 10px;
+            padding: 0px 10px;
             text-align: left;
           }
         }
