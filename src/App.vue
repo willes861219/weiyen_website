@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <banner/>
+    <banner />
     <About />
     <Experience />
     <Skills />
@@ -11,18 +11,18 @@
   </div>
 </template>
 
-<script >
-import Banner from './components/banner/template.vue'
-import About from './components/about/template.vue'
-import Experience from './components/experience/template.vue'
-import Skills from './components/skills/template.vue'
-import Resume from './components/resume/template.vue'
-import Projects from './components/projects/template.vue'
-import Contact from './components/contact/template.vue'
-import bottom from './components/bottom/template.vue'
+<script>
+import Banner from "./components/banner/template.vue";
+import About from "./components/about/template.vue";
+import Experience from "./components/experience/template.vue";
+import Skills from "./components/skills/template.vue";
+import Resume from "./components/resume/template.vue";
+import Projects from "./components/projects/template.vue";
+import Contact from "./components/contact/template.vue";
+import bottom from "./components/bottom/template.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Banner,
     About,
@@ -33,16 +33,16 @@ export default {
     Contact,
     bottom,
   },
-  created(){
+  created() {
     document.title = "威延－個人履歷網站";
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 
-$main-font: 'PT Sans', sans-serif;
+$main-font: "PT Sans", sans-serif;
 
 // Colors
 $text-color: #444;
@@ -57,114 +57,106 @@ $progressbar-color: #34495e;
 
 *,
 *:before,
-*:after{
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html,
-body{
+body {
   width: 100%;
   height: 100%;
 }
 
-body{
+body {
   color: $text-color;
   background: $bg-color;
   font-size: 16px;
   font-family: $main-font;
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
 
-section{
+section {
   position: relative;
   width: 100%;
 }
-
 
 #app {
   width: 100%;
   height: 100%;
 }
 
-
 /* 響應式設定 */
 
 @media screen and (min-width: 480px) {
-  .skills .content{
-    
-    .tools-knowledge-wrapper{
-      
+  .skills .content {
+    .tools-knowledge-wrapper {
       .tools-wrapper,
-      .knowledge-wrapper{
+      .knowledge-wrapper {
         width: 50%;
         float: left;
         padding: 0;
 
-        ul{
+        ul {
           margin-left: 0;
         }
       }
     }
-    .clear{
-      clear:both;
+    .clear {
+      clear: both;
     }
   }
 }
 
 @media screen and (min-width: 640px) {
-  
-  .about-myself{
+  .about-myself {
     padding: 100px 40px;
   }
-  
-  .skills{
+
+  .skills {
     padding-left: 0;
     padding-right: 0;
-    
-    .content{
 
-      .development-wrapper{
+    .content {
+      .development-wrapper {
         width: 600px;
         margin: auto;
         margin-bottom: 50px;
       }
 
-      .tools-knowledge-wrapper{
-        width: 600px;
-        margin: auto;
-      }
-    }
-  }
-  
-  .contact{
-    .content{
-      .socials{
+      .tools-knowledge-wrapper {
         width: 600px;
         margin: auto;
       }
     }
   }
 
+  .contact {
+    .content {
+      .socials {
+        width: 600px;
+        margin: auto;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 960px) {
-  
-  .experience{
-    .content{
-      ul{
-        li{
+  .experience {
+    .content {
+      ul {
+        li {
           margin: 0 auto;
-          
-          .experience-content{
+
+          .experience-content {
             width: 40vw;
           }
-          
+
           &:nth-child(odd) .experience-content {
             left: 63px;
           }
@@ -183,87 +175,82 @@ section{
             right: -50px;
             width: 50px;
           }
-          &:nth-child(odd) .hidden{
+          &:nth-child(odd) .hidden {
             margin-left: 10vw;
           }
-          &:nth-child(even) .hidden{
+          &:nth-child(even) .hidden {
             margin-left: -10vw;
           }
         }
       }
     }
   }
-  
-  .skills{
+
+  .skills {
     padding-left: 50px;
     padding-right: 50px;
-    
-    .content{
+
+    .content {
       max-width: 1100px;
       margin: auto;
-      
-      .development-wrapper,
-      .tools-knowledge-wrapper{
-        float: left;
-      }
-      
-      .development-wrapper{
+
+      .development-wrapper {
         margin-bottom: 0;
         width: 60%;
       }
-      
-      .tools-knowledge-wrapper{
-        width: 40%;
+
+      .tools-knowledge-wrapper {
+        width: 60%;
         margin-top: 60px;
-        
+
         .tools-wrapper,
-        .knowledge-wrapper{
+        .knowledge-wrapper {
           float: none;
           margin: auto;
         }
-        
-        .tools-wrapper{
+
+        .tools-wrapper {
           margin-bottom: 30px;
         }
       }
     }
   }
-  
-  .portfolio{
-    .content{
-      .projects{
-        .project{
+
+  .portfolio {
+    .content {
+      .projects {
+        .project {
           position: relative;
           margin: auto;
           margin-bottom: 3%;
           width: 680px;
           height: 450px;
           overflow: hidden;
-          
-          &:hover .project-image{
+
+          &:hover .project-image {
             -webkit-transform: scale(0.5);
             transform: scale(0.5);
           }
-          
+
           &:hover .project-title,
-          &:hover .project-description{
+          &:hover .project-description {
             opacity: 1;
           }
-          
-          .project-image{
+
+          .project-image {
             position: absolute;
             left: 0;
             top: 0;
             right: 0;
             bottom: 0;
-            -webkit-transition: transform .5s ease;
-            transition: transform .5s ease; 
+            -webkit-transition: transform 0.5s ease;
+            transition: transform 0.5s ease;
             -webkit-transform-origin: left top;
             transform-origin: left top;
             z-index: 3;
             overflow: hidden;
 
-            img{
+            img {
               width: 100%;
               height: auto;
               min-height: 100%;
@@ -271,24 +258,24 @@ section{
             }
           }
           .project-title,
-          .project-description{
+          .project-description {
             position: absolute;
             height: 50%;
             opacity: 0;
-            -webkit-transition: opacity .3s linear;
-            transition: opacity .3s linear; 
+            -webkit-transition: opacity 0.3s linear;
+            transition: opacity 0.3s linear;
             overflow: hidden;
           }
 
-          .project-title{
+          .project-title {
             width: 50%;
             top: 0;
             right: 0;
             padding: 10px;
             text-align: center;
-            display:table;
+            display: table;
 
-            h2{
+            h2 {
               font-size: 2em;
               text-decoration: underline;
               display: table-cell;
@@ -296,7 +283,7 @@ section{
             }
           }
 
-          .project-description{
+          .project-description {
             width: 100%;
             top: 50%;
             left: 0;
@@ -307,6 +294,5 @@ section{
       }
     }
   }
-  
 }
 </style>

@@ -3,6 +3,7 @@
 export default{
     data(){
         return{
+          msg:"藉由上方連結了解更多"
         }
     }
 }
@@ -18,10 +19,6 @@ export default{
   p{
     color: #777;
     font-size: 1.1em;
-  }
-  
-  i{
-    color: #e74c3c;
   }
 }
 </style>

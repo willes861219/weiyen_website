@@ -14,16 +14,10 @@ export default{
 // Colors
 $text-color: #444;
 $title-color: #3c3c3c;
-$bg-color: #f9f9f9;
 
-$experience-bg-color: #002440;
-$experience-content-bg-color: #f5f5f5;
-
-$progressbar-bg: #ececec;
-$progressbar-color: #34495e;
 
 .portfolio{
-  background: $bg-color;
+  background: rgb(240, 239, 239) ;
   padding: 80px 0;
   
   .content{

@@ -13,7 +13,6 @@ export default{
     handleScroll() {
       if(!this.active){
         this.active = window.scrollY > 180 ? true : false;
-        console.log(this.active)
       }
     }
   }
@@ -30,6 +29,7 @@ export default{
   
   .content{
     text-align: center;
+    ;
     
     h2{
       color: #3d3d3d;
