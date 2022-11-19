@@ -23,9 +23,6 @@ $text-color: #444;
 $title-color: #3c3c3c;
 $bg-color: #f9f9f9;
 
-$progressbar-bg: #ececec;
-$progressbar-color: #34495e;
-
 .skills {
   padding: 70px 20px;
 

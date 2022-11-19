@@ -65,6 +65,9 @@ $title-color: #3c3c3c;
             font-size: 22px;
             color: #2a5bed;
           }
+          span {
+            font-size: 16px;
+          }
         }
       }
     }

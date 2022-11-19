@@ -28,7 +28,6 @@ export default {
 
 <style lang="scss">
 // Colors
-$text-color: #444;
 $title-color: #3c3c3c;
 $bg-color: #f9f9f9;
 
