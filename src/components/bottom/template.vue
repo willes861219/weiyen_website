@@ -2,7 +2,7 @@
 export default {
   data() {
     return {
-      msg: "歡迎聯繫我~",
+      msg: "此為我的個人連結，歡迎聯繫交流",
     };
   },
 };
