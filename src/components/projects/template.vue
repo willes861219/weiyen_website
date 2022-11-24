@@ -2,6 +2,11 @@
 export default {
   data() {
     return {
+      // chageImgStr: [
+      //   `<img src="../../assets/images/bike01.png" alt="">`,
+      //   `<img src="../../assets/images/bike02.png" alt="">`,
+      //   `<img src="../../assets/images/bike03.png" alt="">`,
+      // ],
       chageImgStr: [
         `<img src="img/bike01.70133c7b.png" alt="">`,
         `<img src="img/bike02.129c4038.png" alt="">`,
