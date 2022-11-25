@@ -5,7 +5,7 @@ export default {
       Skills: {
         程式語言: ["C#", "JavaScript", "Python"],
         前端: ["Vue", "TailwindCSS", "JavaScript (ES6+)", "HTML", "CSS"],
-        後端: ["ASP.NET Core", "ASP .NET MVC", "JWT", "RESTful API"],
+        後端: ["ASP.NET Core", "ASP.NET MVC", "JWT", "RESTful API"],
         資料庫: ["MSSQL", "PostgreSQL"],
         部署: ["IIS", "Docker"],
         版控: ["Git"],
